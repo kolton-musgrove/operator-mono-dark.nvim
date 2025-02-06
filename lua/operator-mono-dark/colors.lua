@@ -11,7 +11,7 @@ local colors = {
 	added = "#2EA043",
 	modified = "#0078D4",
 	line_nr = "#6E7681",
-	selection = "#BB800966",
+	selection = "#1555c2",
 	dropdown_bg = "#313131",
 }
 
