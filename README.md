@@ -8,7 +8,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
-  "yourusername/operator-mono-dark.nvim",
+  "kolton-musgrove/operator-mono-dark.nvim",
   lazy = false,
   priority = 1000,
 }
