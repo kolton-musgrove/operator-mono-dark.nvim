@@ -1,6 +1,6 @@
 local M = {}
 
-function M.setup()
+local function load()
 	local colors = require("operator-mono-dark.colors")
 
 	local highlights = {
@@ -67,9 +67,6 @@ function M.setup()
 		IndentBlanklineChar = { fg = "#313131" },
 	}
 
-	-- Create the colorscheme
-	vim.api.nvim_create_augroup("OperatorMonoDark", { clear = true })
-
 	-- Set colorscheme name
 	vim.g.colors_name = "operator_mono_dark"
 
@@ -83,6 +80,16 @@ function M.setup()
 	for group, settings in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, settings)
 	end
+end
+
+function M.setup()
+	-- Create the colorscheme command
+	vim.api.nvim_create_user_command("OperatorMonoDark", function()
+		load()
+	end, {})
+
+	-- load the colorscheme
+	load()
 end
 
 return M
