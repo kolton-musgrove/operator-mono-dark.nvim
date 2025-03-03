@@ -2,6 +2,9 @@
 
 A clean, dark theme for Neovim inspired by VSCode's dark modern theme.
 
+![image](https://github.com/user-attachments/assets/c362c925-de92-491c-80c0-abe88b255256)
+
+
 ## Installation
 
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
